@@ -14,6 +14,6 @@ if (class_exists('ACF')) {
 	require_once 'files/posttype.php';
 	require_once 'files/acf.php';
 	require_once 'files/banner-loop.php';
-	require_once 'files/frontpage-banner.php';
+	require_once 'files/banner-function.php';
 
 }

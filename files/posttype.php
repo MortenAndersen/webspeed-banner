@@ -18,7 +18,7 @@ function webspeed_banner_create_posttype_banner() {
 			'publicly_queryable' => false,
 			'query_var' => false,
 			'exclude_from_search' => true,
-			'menu_icon' => 'dashicons-businessman',
+			'menu_icon' => 'dashicons-format-gallery',
 			'supports' => array(
 				'title',
 			),
