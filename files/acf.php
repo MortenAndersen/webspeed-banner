@@ -1,5 +1,8 @@
 <?php
-if (function_exists('acf_add_local_field_group')):
+add_action('acf/include_fields', function () {
+	if (!function_exists('acf_add_local_field_group')) {
+		return;
+	}
 
 	acf_add_local_field_group(array(
 		'key' => 'group_644a52da0cd0f',
@@ -70,6 +73,48 @@ if (function_exists('acf_add_local_field_group')):
 						'return_format' => 'array',
 						'parent_repeater' => 'field_644a52da60cfb',
 					),
+					array(
+						'key' => 'field_645ba89486d16',
+						'label' => 'Overskrift',
+						'name' => 'overskrift',
+						'aria-label' => '',
+						'type' => 'text',
+						'instructions' => '',
+						'required' => 0,
+						'conditional_logic' => 0,
+						'wrapper' => array(
+							'width' => '',
+							'class' => '',
+							'id' => '',
+						),
+						'default_value' => '',
+						'maxlength' => '',
+						'placeholder' => '',
+						'prepend' => '',
+						'append' => '',
+						'parent_repeater' => 'field_644a52da60cfb',
+					),
+					array(
+						'key' => 'field_645ba8a486d17',
+						'label' => 'Tekst',
+						'name' => 'tekst',
+						'aria-label' => '',
+						'type' => 'textarea',
+						'instructions' => '',
+						'required' => 0,
+						'conditional_logic' => 0,
+						'wrapper' => array(
+							'width' => '',
+							'class' => '',
+							'id' => '',
+						),
+						'default_value' => '',
+						'maxlength' => '',
+						'rows' => '',
+						'placeholder' => '',
+						'new_lines' => '',
+						'parent_repeater' => 'field_644a52da60cfb',
+					),
 				),
 			),
 			array(
@@ -88,6 +133,7 @@ if (function_exists('acf_add_local_field_group')):
 				),
 				'post_type' => array(
 					0 => 'page',
+					1 => 'post',
 				),
 				'post_status' => '',
 				'taxonomy' => '',
@@ -119,5 +165,4 @@ if (function_exists('acf_add_local_field_group')):
 		'description' => '',
 		'show_in_rest' => 0,
 	));
-
-endif;
+});

@@ -4,6 +4,7 @@ add_action('webspeed_after_header', 'webspeed_banner');
 function webspeed_banner() {
 
 	$loop = new WP_Query(array(
+
 		'post_type' => 'wsbanner',
 		'meta_query' => array(
 			array(
