@@ -44,7 +44,7 @@ add_action('acf/include_fields', function () {
 							'class' => '',
 							'id' => '',
 						),
-						'return_format' => 'url',
+						'return_format' => 'array',
 						'library' => 'all',
 						'min_width' => '',
 						'min_height' => '',
@@ -144,6 +144,8 @@ add_action('acf/include_fields', function () {
 				'min' => '',
 				'max' => '',
 				'elements' => '',
+				'bidirectional_target' => array(
+				),
 			),
 		),
 		'location' => array(
