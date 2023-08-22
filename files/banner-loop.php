@@ -13,7 +13,7 @@ function banner_loop() {
 		// -----------------------------------------
 		if ($sub_link) {
 			echo '<a href="' . $sub_link['url'] . '" target="' . $sub_link['target'] . '" title="' . $sub_link['title'] . '">';
-			echo '<img src="' . $sub_billede['url'] . '" alt="' . $sub_billede['alt'] . '">';
+			echo '<img src="' . $sub_billede['url'] . '" alt="' . $sub_billede['alt'] . '" width="' . $sub_billede['width'] . '" height="' . $sub_billede['height'] . '">';
 			if ($sub_title || $sub_txt) {
 				echo '<div class="wrap-no-pad">';
 				echo '<div class="top-caption">';
@@ -29,7 +29,7 @@ function banner_loop() {
 
 			echo '</a>';
 		} else {
-			echo '<img src="' . $sub_billede['url'] . '" alt="' . $sub_billede['alt'] . '">';
+			echo '<img src="' . $sub_billede['url'] . '" alt="' . $sub_billede['alt'] . '" width="' . $sub_billede['width'] . '" height="' . $sub_billede['height'] . '">';
 			if ($sub_title || $sub_txt) {
 				echo '<div class="wrap-no-pad">';
 				echo '<div class="top-caption">';
