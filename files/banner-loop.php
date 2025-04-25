@@ -4,6 +4,7 @@ function banner_loop() {
 	echo '<div class="banner top-post-img">';
 	while (have_rows('banner')): the_row();
 		echo '<div class="banner-item">';
+		echo '<div class="slide-inner">';
 		// -----------------------------------------
 		$size = 'full';
 		$sub_billede = get_sub_field('billede');
@@ -43,6 +44,7 @@ function banner_loop() {
 				echo '</div>';
 			}
 		}
+		echo '</div>';
 		echo '</div>';
 	endwhile;
 	echo '</div>';
